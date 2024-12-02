@@ -4,7 +4,10 @@ module com.example.stockexchange {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires atlantafx.base;
 
     opens com.example.stockexchange to javafx.fxml;
+    opens com.example.stockexchange.controller to javafx.fxml;
+
     exports com.example.stockexchange;
 }
